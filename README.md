@@ -106,15 +106,6 @@ As a **Game Programmer and Game Designer**, I was responsible for implementing g
   <img src="./diagram/GameFlow House Seeker.drawio.png" width="90%" alt="House Seeker Game Flow">
 </p>
 
-### Checkpoint Flow
-
-1. The player starts the level.
-2. The player explores the environment and collects coins.
-3. The player discovers and activates a checkpoint.
-4. The game records the last activated checkpoint.
-5. If the player fails or falls, the player respawns at that checkpoint.
-6. The player continues progressing through the level.
-
 ---
 
 # 🛠️ Development
