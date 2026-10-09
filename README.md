@@ -82,7 +82,6 @@ As a **Game Programmer and Game Designer**, I was responsible for implementing g
   <img src="./diagram/ModuleDesignHouseSeeker.drawio.png" width="90%" alt="House Seeker Module Design">
 </p>
 
-This section illustrates the overall structure of the game's systems and how they work together.
 
 ---
 
