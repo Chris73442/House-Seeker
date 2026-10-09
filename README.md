@@ -1,7 +1,7 @@
 # 🏠 House Seeker
 
 <p align="center">
-  <img src="./Documentation/gameplay.gif" width="100%" alt="House Seeker Gameplay">
+  <img src="./Assets/house-seeker.gif" width="100%">
 </p>
 
 ---
