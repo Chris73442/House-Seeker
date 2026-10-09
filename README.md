@@ -103,7 +103,7 @@ As a **Game Programmer and Game Designer**, I was responsible for implementing g
 # 📁 Game Flow
 
 <p align="center">
-  <img src="./Documentation/game-flow.png" width="90%" alt="House Seeker Game Flow">
+  <img src="./diagram/GameFlow House Seeker.drawio.png" width="90%" alt="House Seeker Game Flow">
 </p>
 
 ### Checkpoint Flow
