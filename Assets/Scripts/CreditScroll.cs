@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
@@ -10,10 +11,7 @@ public class CreditScroll : MonoBehaviour
     public GameObject pressEnterText;
 
     [Header("Scroll Settings")]
-    public float scrollSpeed = 80f;
-
-    [Header("Press Enter Timing")]
-    public float showOffset = 200f; // muncul lebih awal (atur di sini)
+    public float scrollSpeed = 100f;
 
     [Header("Scene")]
     public string mainMenuSceneName = "Main Menu Scene";
@@ -28,17 +26,25 @@ public class CreditScroll : MonoBehaviour
         tmp = creditText.GetComponent<TextMeshProUGUI>();
         tmp.ForceMeshUpdate();
 
+        // Center alignment
+        tmp.alignment = TextAlignmentOptions.Center;
+
+        // Center horizontal position
+        Vector2 position = creditText.anchoredPosition;
+        position.x = -280f;
+        creditText.anchoredPosition = position;
+
         float textHeight = tmp.preferredHeight;
         float viewHeight = viewArea.rect.height;
 
-        // 🔥 mulai dari bawah layar (no delay)
+        // Mulai dari bawah layar
         float startY = -(textHeight / 2f) - (viewHeight / 2f);
-        creditText.anchoredPosition = new Vector2(0, startY);
+        creditText.anchoredPosition = new Vector2(-280, startY);
 
-        // 🔥 stop di akhir credit
+        // Posisi berhenti setelah seluruh credit selesai
         stopY = startY + textHeight + viewHeight;
 
-        // sembunyikan dulu
+        // Sembunyikan Press Enter terlebih dahulu
         if (pressEnterText != null)
             pressEnterText.SetActive(false);
     }
@@ -47,25 +53,31 @@ public class CreditScroll : MonoBehaviour
     {
         if (!finished)
         {
-            creditText.anchoredPosition += Vector2.up * scrollSpeed * Time.deltaTime;
+            // Scroll credit ke atas
+            creditText.anchoredPosition +=
+                Vector2.up * scrollSpeed * Time.deltaTime;
 
-            // 🔥 munculin lebih awal (biar nggak delay)
-            if (pressEnterText != null &&
-                !pressEnterText.activeSelf &&
-                creditText.anchoredPosition.y >= stopY - showOffset)
-            {
-                pressEnterText.SetActive(true);
-            }
-
-            // stop di akhir
+            // Tunggu sampai seluruh credit selesai
             if (creditText.anchoredPosition.y >= stopY)
             {
-                creditText.anchoredPosition = new Vector2(0, stopY);
+                creditText.anchoredPosition =
+                new Vector2(-280, stopY);
+
                 finished = true;
+
+                // Hilangkan seluruh tulisan credit
+                creditText.gameObject.SetActive(false);
+
+                // Tampilkan Press Enter
+                if (pressEnterText != null)
+                {
+                    pressEnterText.SetActive(true);
+                }
             }
         }
         else
         {
+            // Kembali ke Main Menu saat Enter ditekan
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 SceneManager.LoadScene(mainMenuSceneName);

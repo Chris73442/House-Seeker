@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class Checkpoint : MonoBehaviour
@@ -37,11 +38,16 @@ public class Checkpoint : MonoBehaviour
         PlayerPrefs.SetInt("CheckpointUsed", 1);
         PlayerPrefs.SetFloat("CheckpointX", transform.position.x);
         PlayerPrefs.SetFloat("CheckpointY", transform.position.y);
-        PlayerPrefs.SetInt("SavedCoin", GameManager.instance.score);
         PlayerPrefs.SetInt("HasSave", 1);
+
+        // Simpan semua koin yang sudah dikumpulkan
+        GameManager.instance.SaveCoin();
+
         PlayerPrefs.Save();
 
         SetInactive();
+
+        Debug.Log("Checkpoint Activated!");
     }
 
     void SetInactive()

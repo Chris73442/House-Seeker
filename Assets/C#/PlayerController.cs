@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,7 +8,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 5f;
 
     [Header("Jump")]
-    public float jumpForce;
+    public float jumpForce = 10f;
     public float gravityScale = 3f;
 
     [Header("Jump Limit")]
@@ -17,13 +18,9 @@ public class PlayerController : MonoBehaviour
     [Header("Ground Check Layer")]
     public LayerMask groundLayer;
 
-    [Header("Sprites")]
-    public Sprite idleSprite;
-    public Sprite runSprite;
-    public Sprite jumpSprite;
-
     private Rigidbody2D rb;
     private SpriteRenderer sr;
+    private Animator animator;
 
     private float moveInput;
     private bool isGrounded;
@@ -32,24 +29,23 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
 
         rb.gravityScale = gravityScale;
-
-        sr.sprite = idleSprite;
-
         jumpLeft = maxJump;
 
-        // 🔥 LOAD COIN
+        // LOAD COIN
         if (GameManager.instance != null)
         {
             GameManager.instance.LoadCheckpointData();
         }
 
-        // 🔥 FIX UTAMA: hanya spawn checkpoint kalau benar-benar ada save
+        // LOAD CHECKPOINT POSITION
         if (PlayerPrefs.GetInt("HasSave", 0) == 1)
         {
             float x = PlayerPrefs.GetFloat("CheckpointX");
             float y = PlayerPrefs.GetFloat("CheckpointY");
+
             transform.position = new Vector2(x, y);
         }
     }
@@ -58,22 +54,31 @@ public class PlayerController : MonoBehaviour
     {
         moveInput = Input.GetAxisRaw("Horizontal");
 
+        // FLIP CHARACTER
         if (moveInput > 0)
             sr.flipX = false;
         else if (moveInput < 0)
             sr.flipX = true;
 
+        // JUMP
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (jumpLeft > 0)
             {
-                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                rb.velocity = new Vector2(
+                    rb.velocity.x,
+                    jumpForce
+                );
+
                 jumpLeft--;
             }
         }
 
-        UpdateSprite();
+        // UPDATE ANIMATION
+        animator.SetFloat("Speed", Mathf.Abs(moveInput));
+        animator.SetBool("IsGrounded", isGrounded);
 
+        // DIE
         if (transform.position.y < -10f)
         {
             Die();
@@ -82,7 +87,10 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
+        rb.velocity = new Vector2(
+            moveInput * moveSpeed,
+            rb.velocity.y
+        );
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -102,21 +110,15 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void UpdateSprite()
-    {
-        bool moving = Mathf.Abs(rb.velocity.x) > 0.1f;
-        bool inAir = !isGrounded;
-
-        if (inAir)
-            sr.sprite = jumpSprite;
-        else if (moving)
-            sr.sprite = runSprite;
-        else
-            sr.sprite = idleSprite;
-    }
-
     void Die()
     {
+        // RESET KOIN YANG BELUM TERSIMPAN
+        if (GameManager.instance != null)
+        {
+            GameManager.instance.RestoreTemporaryCoins();
+        }
+
+        // MASUK KE FAILED SCENE
         SceneManager.LoadScene("Failed Scene");
     }
 }

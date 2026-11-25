@@ -1,0 +1,452 @@
+{
+ "frames": {
+  "c__checkbox__amber.png": {
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 13,
+    "h": 13
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 13,
+    "h": 13
+   },
+   "sourceSize": {
+    "w": 13,
+    "h": 13
+   }
+  },
+  "c__checkbox__blue.png": {
+   "frame": {
+    "x": 15,
+    "y": 0,
+    "w": 13,
+    "h": 13
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 13,
+    "h": 13
+   },
+   "sourceSize": {
+    "w": 13,
+    "h": 13
+   }
+  },
+  "c__checkbox__empty.png": {
+   "frame": {
+    "x": 30,
+    "y": 0,
+    "w": 13,
+    "h": 13
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 13,
+    "h": 13
+   },
+   "sourceSize": {
+    "w": 13,
+    "h": 13
+   }
+  },
+  "c__checkbox__green.png": {
+   "frame": {
+    "x": 45,
+    "y": 0,
+    "w": 13,
+    "h": 13
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 13,
+    "h": 13
+   },
+   "sourceSize": {
+    "w": 13,
+    "h": 13
+   }
+  },
+  "c__checkbox__purple.png": {
+   "frame": {
+    "x": 60,
+    "y": 0,
+    "w": 13,
+    "h": 13
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 13,
+    "h": 13
+   },
+   "sourceSize": {
+    "w": 13,
+    "h": 13
+   }
+  },
+  "c__checkbox__red.png": {
+   "frame": {
+    "x": 75,
+    "y": 0,
+    "w": 13,
+    "h": 13
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 13,
+    "h": 13
+   },
+   "sourceSize": {
+    "w": 13,
+    "h": 13
+   }
+  },
+  "c__checkbox__slate.png": {
+   "frame": {
+    "x": 90,
+    "y": 0,
+    "w": 13,
+    "h": 13
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 13,
+    "h": 13
+   },
+   "sourceSize": {
+    "w": 13,
+    "h": 13
+   }
+  },
+  "c__slider_knob__brass.png": {
+   "frame": {
+    "x": 105,
+    "y": 0,
+    "w": 11,
+    "h": 12
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 11,
+    "h": 12
+   },
+   "sourceSize": {
+    "w": 11,
+    "h": 12
+   }
+  },
+  "c__slider_track__amber.png": {
+   "frame": {
+    "x": 118,
+    "y": 0,
+    "w": 63,
+    "h": 9
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 63,
+    "h": 9
+   },
+   "sourceSize": {
+    "w": 63,
+    "h": 9
+   }
+  },
+  "c__slider_track__blue.png": {
+   "frame": {
+    "x": 183,
+    "y": 0,
+    "w": 63,
+    "h": 9
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 63,
+    "h": 9
+   },
+   "sourceSize": {
+    "w": 63,
+    "h": 9
+   }
+  },
+  "c__slider_track__empty.png": {
+   "frame": {
+    "x": 248,
+    "y": 0,
+    "w": 63,
+    "h": 9
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 63,
+    "h": 9
+   },
+   "sourceSize": {
+    "w": 63,
+    "h": 9
+   }
+  },
+  "c__slider_track__green.png": {
+   "frame": {
+    "x": 313,
+    "y": 0,
+    "w": 63,
+    "h": 9
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 63,
+    "h": 9
+   },
+   "sourceSize": {
+    "w": 63,
+    "h": 9
+   }
+  },
+  "c__slider_track__purple.png": {
+   "frame": {
+    "x": 378,
+    "y": 0,
+    "w": 63,
+    "h": 9
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 63,
+    "h": 9
+   },
+   "sourceSize": {
+    "w": 63,
+    "h": 9
+   }
+  },
+  "c__slider_track__red.png": {
+   "frame": {
+    "x": 443,
+    "y": 0,
+    "w": 63,
+    "h": 9
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 63,
+    "h": 9
+   },
+   "sourceSize": {
+    "w": 63,
+    "h": 9
+   }
+  },
+  "c__slider_track__slate.png": {
+   "frame": {
+    "x": 0,
+    "y": 15,
+    "w": 63,
+    "h": 9
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 63,
+    "h": 9
+   },
+   "sourceSize": {
+    "w": 63,
+    "h": 9
+   }
+  },
+  "c__toggle__amber.png": {
+   "frame": {
+    "x": 65,
+    "y": 15,
+    "w": 25,
+    "h": 13
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 25,
+    "h": 13
+   },
+   "sourceSize": {
+    "w": 25,
+    "h": 13
+   }
+  },
+  "c__toggle__blue.png": {
+   "frame": {
+    "x": 92,
+    "y": 15,
+    "w": 25,
+    "h": 13
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 25,
+    "h": 13
+   },
+   "sourceSize": {
+    "w": 25,
+    "h": 13
+   }
+  },
+  "c__toggle__green.png": {
+   "frame": {
+    "x": 119,
+    "y": 15,
+    "w": 25,
+    "h": 13
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 25,
+    "h": 13
+   },
+   "sourceSize": {
+    "w": 25,
+    "h": 13
+   }
+  },
+  "c__toggle__off.png": {
+   "frame": {
+    "x": 146,
+    "y": 15,
+    "w": 25,
+    "h": 13
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 25,
+    "h": 13
+   },
+   "sourceSize": {
+    "w": 25,
+    "h": 13
+   }
+  },
+  "c__toggle__purple.png": {
+   "frame": {
+    "x": 173,
+    "y": 15,
+    "w": 25,
+    "h": 13
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 25,
+    "h": 13
+   },
+   "sourceSize": {
+    "w": 25,
+    "h": 13
+   }
+  },
+  "c__toggle__red.png": {
+   "frame": {
+    "x": 200,
+    "y": 15,
+    "w": 25,
+    "h": 13
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 25,
+    "h": 13
+   },
+   "sourceSize": {
+    "w": 25,
+    "h": 13
+   }
+  },
+  "c__toggle__slate.png": {
+   "frame": {
+    "x": 227,
+    "y": 15,
+    "w": 25,
+    "h": 13
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 25,
+    "h": 13
+   },
+   "sourceSize": {
+    "w": 25,
+    "h": 13
+   }
+  }
+ },
+ "meta": {
+  "image": "sheet_controls_1x.png",
+  "size": {
+   "w": 506,
+   "h": 28
+  },
+  "scale": "1"
+ }
+}

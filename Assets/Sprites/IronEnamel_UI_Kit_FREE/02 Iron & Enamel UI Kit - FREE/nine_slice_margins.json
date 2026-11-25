@@ -1,0 +1,38 @@
+{
+  "Panels/Window": [
+    7,
+    7,
+    7,
+    7
+  ],
+  "Panels/Window_Titled": [
+    7,
+    15,
+    7,
+    7
+  ],
+  "Panels/Inset": [
+    3,
+    4,
+    3,
+    3
+  ],
+  "Bars/Bar_Frame": [
+    5,
+    0,
+    5,
+    0
+  ],
+  "Controls/Slider_Track": [
+    5,
+    0,
+    5,
+    0
+  ],
+  "Buttons/01..03 Wide + 08 Pill": [
+    5,
+    0,
+    5,
+    0
+  ]
+}

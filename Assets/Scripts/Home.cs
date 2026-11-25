@@ -1,10 +1,11 @@
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;
 
 public class Home : MonoBehaviour
 {
-    public GameObject buyText; // UI text
+    [Header("House Settings")]
+    public GameObject buyText;
     public int requiredCoins = 9;
 
     private bool isNear = false;
@@ -13,23 +14,29 @@ public class Home : MonoBehaviour
     {
         if (!isNear) return;
 
-        int coins = PlayerPrefs.GetInt("SavedCoin", 0);
-
-        if (buyText != null && !buyText.activeSelf)
-        {
-            buyText.SetActive(true);
-        }
-
         if (Input.GetKeyDown(KeyCode.F))
         {
-            if (coins == requiredCoins)
+            if (GameManager.instance == null)
             {
+                Debug.LogError("GameManager tidak ditemukan!");
+                return;
+            }
+
+            // Ambil jumlah koin saat ini
+            int coins = GameManager.instance.score;
+
+            Debug.Log("Koin saat ini: " + coins);
+
+            // CEK KOIN
+            if (coins >= requiredCoins)
+            {
+                Debug.Log("Pembelian berhasil!");
+
                 SceneManager.LoadScene("CreditScene");
             }
             else
             {
-                // tidak cukup → tidak terjadi apa-apa
-                Debug.Log("Coin tidak cukup");
+                Debug.Log("Koin tidak cukup! Butuh: " + requiredCoins);
             }
         }
     }
@@ -39,7 +46,11 @@ public class Home : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isNear = true;
-            buyText.SetActive(true);
+
+            if (buyText != null)
+            {
+                buyText.SetActive(true);
+            }
         }
     }
 

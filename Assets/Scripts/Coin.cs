@@ -5,12 +5,10 @@ public class Coin : MonoBehaviour
     public string coinID;
 
     private bool taken = false;
-    private Collider2D col;
 
     void Start()
     {
-        col = GetComponent<Collider2D>();
-
+        // Hanya hancurkan koin yang sudah tersimpan
         if (PlayerPrefs.GetInt(coinID, 0) == 1)
         {
             Destroy(gameObject);
@@ -25,13 +23,20 @@ public class Coin : MonoBehaviour
 
         taken = true;
 
-        col.enabled = false;
+        // Catat sebagai koin sementara
+        GameManager.instance.RegisterTemporaryCoin(this);
 
-        PlayerPrefs.SetInt(coinID, 1);
-        PlayerPrefs.Save();
-
+        // Tambahkan score
         GameManager.instance.AddScore(1);
 
-        Destroy(gameObject);
+        // Sembunyikan koin, jangan dihancurkan
+        gameObject.SetActive(false);
+    }
+
+    // Munculkan kembali koin saat respawn
+    public void RestoreCoin()
+    {
+        taken = false;
+        gameObject.SetActive(true);
     }
 }

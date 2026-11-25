@@ -1,0 +1,32 @@
+IRON & ENAMEL UI KIT — LICENSE
+==============================
+Applies to both the FREE and the PRO edition: every image, spritesheet, the
+"Iron Enamel" font (TTF / BMFont) and the included source files ("the Assets").
+"The Author" is the creator who publishes this kit on itch.io.
+
+YOU CAN
+- Use the Assets in unlimited personal AND commercial projects: games, apps,
+  prototypes, game jams, videos, streams, websites.
+- Modify, recolor, resize, crop and combine the Assets in any way.
+- Embed the font in your game or app.
+- Ship the Assets inside your compiled / packaged project (as part of the
+  game files), as long as they are not offered as a separate download.
+- Use one purchase for your whole team on the same project.
+
+YOU CANNOT
+- Resell, redistribute, share or re-upload the Assets on their own, even if
+  modified or recolored (for example: in another asset pack, a template, a UI
+  kit, a sprite library, a "free assets" site or a font site).
+- Claim the Assets as your own original work.
+- Use the Assets in NFTs, or to train or fine-tune AI / machine-learning models.
+- Share PRO-edition files with people who did not obtain the PRO edition.
+
+CREDIT
+- Not required, but very much appreciated:
+  "UI by Iron & Enamel UI Kit (itch.io)".
+
+NO WARRANTY
+- The Assets are provided "as is", without warranty of any kind. The Author is
+  not liable for any damages arising from their use.
+
+Questions or special licensing: contact the Author through the itch.io page.

@@ -285,7 +285,6 @@ MonoBehaviour:
   viewArea: {fileID: 544813078}
   pressEnterText: {fileID: 979378627}
   scrollSpeed: 170
-  showOffset: 200
   mainMenuSceneName: MainMenuScene
 --- !u!114 &544813082
 MonoBehaviour:
@@ -360,15 +359,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: PRESS ENTER TO CONTINUE
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 519ce7fb6e387594ab7400a997a4202f, type: 2}
+  m_sharedMaterial: {fileID: 1327874915235193374, guid: 519ce7fb6e387594ab7400a997a4202f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4281874488
+  m_fontColor: {r: 0.21960784, g: 0.21960784, b: 0.21960784, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -469,7 +468,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -999, y: -724}
+  m_AnchoredPosition: {x: -293, y: -1013}
   m_SizeDelta: {x: 200, y: 3000}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1101502587
@@ -492,19 +491,20 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "THANK YOU FOR PLAYING\r\n\r\nGame by:\r\nChristopher Immanuel Sunjoto\n\r\nProgramming:\r\nChristopher
-    Immanuel Sunjoto\n\r\nAssets:\r\nJellyBeam\n  \rrvros\ncadya\naamatniekss\nSilver500\nSwifty
-    Games\n\nMusic By:\nArtMyLife(Powerful Dramatic Trailer)"
+  m_text: "THANK YOU \nFOR PLAYING\r\n\r\nGame by:\r\nChristopher Immanuel Sunjoto\n\r\nProgramming:\r\nChristopher
+    Immanuel Sunjoto\n\r\nAssets:\r\nJellyBeam(house)\nrvros(adventurer)\ncadya(coin)\naamatniekss(tileset)\nSwifty
+    Games(checkpoint asset)\nGGBotNet(font text)\n\nMusic By:\nArtMyLife(Powerful
+    Dramatic Trailer)"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 519ce7fb6e387594ab7400a997a4202f, type: 2}
+  m_sharedMaterial: {fileID: 1327874915235193374, guid: 519ce7fb6e387594ab7400a997a4202f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4281874488
+  m_fontColor: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -528,7 +528,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
